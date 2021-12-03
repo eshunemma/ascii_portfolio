@@ -1,0 +1,18 @@
+$ git checkout HEAD portrait.txt 
+$ git add portrait.txt 
+$ git commit -m "eyebrows"
+[master 2eb33c6] eyebrows
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+$ git add .
+$ git commit -m "dates updated"
+[master da5d78b] dates updated
+ 3 files changed, 19 insertions(+), 2 deletions(-)
+ create mode 100644 house.txt
+$ git add .
+$ git reset HEAD house.txt 
+Unstaged changes after reset:
+M       house.txt
+$ git commit -m "remove house.txt from staging area"
+[master 244bc39] remove house.txt from staging area
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+$ 
